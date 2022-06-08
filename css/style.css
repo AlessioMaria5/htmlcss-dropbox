@@ -22,7 +22,7 @@
     padding: 10px;
     color: white;
     font-size: 12px;
-    width: fit-content;
+
 }
 
 
@@ -38,6 +38,7 @@ header {
 
     height: 60px;
     background-color: white;
+
 }
 
 li img {
@@ -54,15 +55,16 @@ header a:link {
     font-weight: 10;
 }
 
+
 .right-side ul , .left-side ul , .button {
 
     display: flex;
     flex-direction: row;
-    flex-wrap:nowrap;
+
+
 
     list-style: none;
     text-decoration: none;
-
     
 }
 
@@ -71,6 +73,8 @@ header a:link {
     margin: 0px 10px 0px 10px;
     height: 60px;
     line-height: 60px;
+
+
 }
 
 .right-side ul li:hover, .left-side ul li:hover {
@@ -87,8 +91,20 @@ header a:link {
 
 .container {
 
-    max-width: 55%;
+    max-width: 60%;
     margin: auto;
+}
+
+.container-main {
+
+    max-width: 50%;
+    margin: auto;
+}
+
+.table-container {
+
+    max-width: 80%;
+    margin:auto;
 }
 
 .leader {
@@ -96,46 +112,33 @@ header a:link {
     background-color: rgb(185,207,229);
 }
 
-.leader h1 {
+h1 {
 
     font-size: 60px;
     text-align:justify;
     padding-top: 60px;
     margin-bottom: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .leader-content {
 
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-    gap: 10px;
+    justify-content: space-between;
     padding-bottom: 15px;
-    overflow: visible;
+    height: fit-content;
+
+
 }
 
 .leader-img img {
 
-    width: 150%;
+
+    max-width: 800px;
+;
    
-  
-
 }
-
-
-.description-area {
-
-  display: flex;
-  flex-direction: column;
-  font-size: 15px;
-  font-family:sans-serif;
-
-  gap: 40px;
-
-}
-
-
 
 .leader-content i {
 
@@ -148,13 +151,36 @@ header a:link {
     color: black;
 }
 
+.leader-img {
+
+    position:relative;
+    width: 70%;
+}
+
+.in-leader-img {
+
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+
+.description-area {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  font-size: 15px;
+  font-family:sans-serif;
+  width: 30%;
+
+  gap: 50px;
 
 
 
-
-
-
-
+}
 
 /* -------------LEADER END */
 
@@ -162,6 +188,200 @@ header a:link {
 main {
 
     height: 300px;
+    margin-top: 150px;
+}
+
+main h1 {
+
+    font-size: 50px;
+}
+
+.radio-button {
+
+    margin-right: 50px;
 }
 
 
+
+
+/* TABLES */
+
+.tables {
+
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+
+    margin-top: 50px;
+}
+
+.services-table {
+
+    width: calc(100% / 3);
+
+    text-align: center;
+  
+    border: solid lightgrey 1px;
+    margin-bottom: 50px;
+
+}
+
+.services-table span {
+
+    color: rgb(121,121,121);
+  
+}
+
+.services-table i {
+
+    margin: 10px;
+}
+
+.services-table hr {
+
+   
+    border:none;
+    background-color: lightgrey;
+    height: 1px;
+}
+
+.top-table  {
+
+    text-align: start;
+
+}
+
+.top-table * {
+
+    margin-bottom: 20px;
+}
+
+.top-table h3 {
+
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.top-table p:nth-of-type(1) {
+
+    font-weight: 900;
+}
+
+.top-table p:nth-of-type(2) {
+
+    font-style: italic;
+    font-family: sans-serif;
+    color: rgb(121,121,121);
+    font-weight: 100;
+}
+
+.top-table p:nth-of-type(3) {
+
+   
+    color: rgb(121,121,121);
+    font-weight: 100;
+    display: inline;
+}
+
+.top-table p:nth-of-type(4) {
+
+   
+    color: rgb(121,121,121);
+    font-weight: 100;
+    display: inline;
+}
+
+.top-table ul {
+
+    list-style: none;
+    margin-left:-11px; 
+    margin-top: 50px;   
+    
+}
+
+.top-table ul li {
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.top-table ul li i {
+
+    margin-top: 0px;
+}
+
+.button-table {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.button-table button {
+
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.button-table button a:link {
+
+    color: white;
+    text-decoration: none;
+}
+
+.table-container {
+
+    text-align: start;
+}
+
+.table-container hr {
+
+    border:none;
+    background-color: lightgrey;
+    height: 1px;
+    width: 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.fa-check {
+
+    color: rgb(40,99,246);
+}
+
+
+
+.services-table.large {
+
+    width: 100%;
+}
+
+.table-container.large {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.button-table-large {
+
+    margin-top:20px;
+    flex-shrink: 1;
+}
+
+.button-table-large .main-btn-large {
+
+    padding: 15px 40px;
+}
+
+.main-btn-large a:link {
+
+    color: white;
+    text-decoration: none;
+}
+
+.large .top-table p:nth-of-type(2) {
+
+    font-style: normal;
+    padding-top: 40px;
+}
