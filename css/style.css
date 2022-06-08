@@ -12,8 +12,21 @@
     background-color: rgb(40,99,246);
     padding: 5px 10px 5px 10px;
     color: white;
-    font-size: 15px;
+    font-size: 12px;
 }
+
+.main-btn-large {
+
+    border: none;
+    background-color: rgb(40,99,246);
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    width: fit-content;
+}
+
+
+
 /* -------------------HEADER START  */
 
 header {
@@ -27,15 +40,14 @@ header {
     background-color: white;
 }
 
-li a img {
+li img {
 
     width: 80%;
 
 }
 
 
-
-a:link {
+header a:link {
 
     text-decoration: none;
     color: rgb(121,121,121);
@@ -70,4 +82,86 @@ a:link {
 
 
 /* -------------------HEADER END  */
+
+/* -------------------LEADER START */
+
+.container {
+
+    max-width: 55%;
+    margin: auto;
+}
+
+.leader {
+
+    background-color: rgb(185,207,229);
+}
+
+.leader h1 {
+
+    font-size: 60px;
+    text-align:justify;
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+
+.leader-content {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    gap: 10px;
+    padding-bottom: 15px;
+    overflow: visible;
+}
+
+.leader-img img {
+
+    width: 150%;
+   
+  
+
+}
+
+
+.description-area {
+
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-family:sans-serif;
+
+  gap: 40px;
+
+}
+
+
+
+.leader-content i {
+
+    font-size: 50px;
+    text-align: end;
+}
+
+.anchor-icon a:link {
+
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/* -------------LEADER END */
+
+
+main {
+
+    height: 300px;
+}
+
 
