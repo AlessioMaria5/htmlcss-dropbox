@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+
+.main-btn {
+
+    border: none;
+    background-color: rgb(40,99,246);
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-size: 15px;
+}
+/* -------------------HEADER START  */
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    height: 60px;
+    background-color: white;
+}
+
+li a img {
+
+    width: 80%;
+
+}
+
+
+
+a:link {
+
+    text-decoration: none;
+    color: rgb(121,121,121);
+    font-weight: 10;
+}
+
+.right-side ul , .left-side ul , .button {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+
+    list-style: none;
+    text-decoration: none;
+
+    
+}
+
+.right-side ul li , .left-side ul li {
+
+    margin: 0px 10px 0px 10px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.right-side ul li:hover, .left-side ul li:hover {
+
+    border-bottom: 1px solid black;
+
+
+}
+
+
+/* -------------------HEADER END  */
+
