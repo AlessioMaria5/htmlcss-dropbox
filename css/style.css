@@ -103,7 +103,7 @@ header a:link {
     margin: auto;
 }
 
-.container-main {
+.container-main , .bottom-join-in {
 
     max-width: 70%;
     margin: auto;
@@ -196,7 +196,6 @@ h1 {
 
 main {
 
-    height: 300px;
     margin-top: 150px;
 }
 
@@ -344,7 +343,7 @@ main h1 {
     text-align: start;
 }
 
-.table-container hr {
+.table-container hr , .center-clients hr , .footer-box hr {
 
     border:none;
     background-color: lightgrey;
@@ -481,7 +480,7 @@ main h1 {
     width: calc(100% / 3);
 }
 
-.business p {
+.business p , .center-clients p {
 
     color: rgb(121,121,121);
     margin-top: 20px;
@@ -508,15 +507,14 @@ main h1 {
 .clients {
 
 
-    width: 100vw;
-
+    width: 100%;
     display: flex;
 
 }
 
 .side-clients, .center-clients {
 
-    width: calc(100% / 3);
+    width: calc(100vw / 3);
 
     
 }
@@ -535,17 +533,19 @@ main h1 {
 
 
 
+
+
 .side-clients {
 
     display: flex;
     flex-wrap: wrap;
 
 
+
 }
 .client-box {
 
     width: 50%;
-    height: 15vw;
 
     display: flex;
     justify-content: center;
@@ -557,7 +557,6 @@ main h1 {
 .client-box img {
 
     width: 50%;
-    filter:grayscale(50%);
 }
 
 .client-box:hover {
@@ -575,6 +574,8 @@ main h1 {
 /* -------- */
 /* box-color */
 
+
+
 .side-clients.left .client-box:nth-of-type(1) {
 
     background-color: rgb(89, 19, 43);
@@ -588,7 +589,9 @@ main h1 {
 .side-clients.left .client-box:nth-of-type(3) {
 
     background-color: rgb(171, 209, 160);
+    forced-color-adjust: white;
 }
+
 
 .side-clients.left .client-box:nth-of-type(4) {
 
@@ -624,3 +627,119 @@ main h1 {
 /* -------- */
 
 /* CLIENTS */
+
+/* JOIN */
+
+.bottom-join {
+
+    width: 100%;
+    background-color: rgb(185,207,229);
+
+}
+
+.bottom-join-in {
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 100px 0px;
+}
+
+.bottom-button button {
+
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+}
+
+.bottom-join-in h2 {
+
+    width: 40%;
+}
+
+
+/* JOIN */
+
+.faq {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0px;
+}
+
+h2[target] {
+
+    margin-bottom: 50px;
+}
+
+.faq i {
+
+    margin-right: 40px;
+}
+
+/* JOIN */
+
+/* FOOTER */
+
+footer {
+
+    width: 100%;
+    background-color: black;
+}
+
+.footer-box {
+
+    width: 60%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.in-footer-box {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.utility {
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.utility ul {
+
+    list-style: none;
+    color: white;
+}
+
+.utility h4 {
+
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+.utility ul li {
+
+    margin-bottom: 15px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.lng {
+
+    color: white;
+    font-size: 10px;
+    color: rgb(121,121,121);
+    line-height: 10px;
+    height: 10px;
+}
+
+
+
+
+
+
