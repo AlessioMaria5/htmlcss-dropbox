@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /* REGOLE GENERALI */
@@ -38,6 +39,13 @@ header {
 
     height: 60px;
     background-color: white;
+
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+
+
 
 }
 
@@ -97,8 +105,9 @@ header a:link {
 
 .container-main {
 
-    max-width: 50%;
+    max-width: 70%;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 .table-container {
@@ -110,6 +119,7 @@ header a:link {
 .leader {
 
     background-color: rgb(185,207,229);
+    padding-top: 80px;
 }
 
 h1 {
@@ -160,8 +170,7 @@ h1 {
 .in-leader-img {
 
     position: absolute;
-    top:0;
-    left: 0;
+  
 }
 
 
@@ -229,6 +238,7 @@ main h1 {
 .services-table span {
 
     color: rgb(121,121,121);
+    font-size: 14px;
   
 }
 
@@ -356,22 +366,16 @@ main h1 {
     width: 100%;
 }
 
-.table-container.large {
 
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
 
 .button-table-large {
 
     margin-top:20px;
-    flex-shrink: 1;
 }
 
 .button-table-large .main-btn-large {
 
-    padding: 15px 40px;
+    padding: 15px 50px;
 }
 
 .main-btn-large a:link {
@@ -380,8 +384,243 @@ main h1 {
     text-decoration: none;
 }
 
-.large .top-table p:nth-of-type(2) {
+.table-container-large .top-table p:nth-of-type(2) {
 
     font-style: normal;
     padding-top: 40px;
 }
+
+.table-container-large .top-table {
+
+    width: 70%;
+
+
+}
+
+
+.table-container-large {
+
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+/* TABLES */
+
+/* PARTNER */
+
+.partner-box {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    font-family: sans-serif;
+    font-size: 20px;
+
+    margin-top: 200px;
+
+}
+
+.partner-box p {
+
+    color: rgb(121,121,121);
+}
+
+.side-img img {
+
+    width: 100%;
+    
+
+}
+
+.side-img {
+
+    width: 60%;
+}
+
+
+.info-partner {
+
+    margin-top: 50px;
+    margin-right: 25px;
+    width: 40%;
+}
+
+.info-partner h2 {
+
+    margin-bottom: 20px;
+}
+
+.info-partner p {
+
+    margin-bottom: 20px;
+}
+
+.info-partner button {
+
+    border: 1px solid rgb(121,121,121);
+    padding: 15px 20px;
+    background-color: white;
+    color: rgb(121,121,121);
+    font-size: 20px;
+}
+
+
+/* SECTION BUSINESS */
+.three-section {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.business {
+
+  
+    width: calc(100% / 3);
+}
+
+.business p {
+
+    color: rgb(121,121,121);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.business img {
+
+    width: 100%;
+}
+
+/* SECTION BUSINESS */
+
+/* DISCOVER */
+
+.discover {
+
+    max-width: 50%;
+}
+/* DISCOVER */
+
+/* CLIENTS */
+
+.clients {
+
+
+    width: 100vw;
+
+    display: flex;
+
+}
+
+.side-clients, .center-clients {
+
+    width: calc(100% / 3);
+
+    
+}
+
+.center-clients {
+
+    background-color: rgb(245,245,245);
+}
+
+.center-clients img {
+
+    width: 50%;
+    margin-top: 25px;
+}
+
+
+
+
+.side-clients {
+
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.client-box {
+
+    width: 50%;
+    height: 15vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.client-box img {
+
+    width: 50%;
+    filter:grayscale(50%);
+}
+
+.client-box:hover {
+
+    border: 10px solid rgba(255, 255, 255, 0.5)
+}
+
+.client-box:active {
+
+    border: 15px solid white;
+}
+
+
+/* -------- */
+/* -------- */
+/* box-color */
+
+.side-clients.left .client-box:nth-of-type(1) {
+
+    background-color: rgb(89, 19, 43);
+}
+
+.side-clients.left .client-box:nth-of-type(2) {
+
+    background-color: rgb(243, 208, 67);
+}
+
+.side-clients.left .client-box:nth-of-type(3) {
+
+    background-color: rgb(171, 209, 160);
+}
+
+.side-clients.left .client-box:nth-of-type(4) {
+
+    background-color: rgb(185, 207, 229);
+}
+
+
+
+
+
+.side-clients.right .client-box:nth-of-type(1) {
+
+    background-color: rgb(19, 38, 124);
+}
+
+.side-clients.right .client-box:nth-of-type(2) {
+
+    background-color: red
+}
+
+.side-clients.right .client-box:nth-of-type(3) {
+
+    background-color: rgb(63, 145, 201);
+}
+
+.side-clients.right .client-box:nth-of-type(4) {
+
+    background-color: rgb(196, 41, 43);
+}
+
+/* box-color */
+/* -------- */
+/* -------- */
+
+/* CLIENTS */
