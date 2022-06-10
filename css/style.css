@@ -684,6 +684,7 @@ main h1 {
     justify-content: space-between;
     align-items: center;
     padding: 35px 0px;
+    flex-wrap: wrap;
 }
 
 h2.faq-title {
@@ -701,6 +702,29 @@ h2.faq-title {
     display: none;
 }
 
+.faq:hover p {
+
+    display:block;
+
+    
+}
+
+.faq:hover i:nth-of-type(1) {
+
+    display:none;
+    
+}
+
+.faq:hover i:nth-of-type(2) {
+
+    display:block;
+    
+}
+
+.faq i:nth-of-type(2) {
+
+    display:none;
+}
 
 /* JOIN */
 
