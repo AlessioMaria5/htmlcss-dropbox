@@ -5,6 +5,8 @@
     font-family: sans-serif;
 }
 
+
+
 /* REGOLE GENERALI */
 
 .main-btn {
@@ -26,76 +28,20 @@
 
 }
 
+.bottom-button button {
 
-
-/* -------------------HEADER START  */
-
-header {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-
-    height: 60px;
     background-color: white;
-
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-
-
-
-
-}
-
-li img {
-
-    width: 80%;
-
+    color: black;
+    padding: 10px 30px;
 }
 
 
-header a:link {
 
-    text-decoration: none;
-    color: rgb(121,121,121);
-    font-weight: 10;
+a:link , a:visited {
+
+    color: black;
 }
 
-
-.right-side ul , .left-side ul , .button {
-
-    display: flex;
-    flex-direction: row;
-
-
-
-    list-style: none;
-    text-decoration: none;
-    
-}
-
-.right-side ul li , .left-side ul li {
-
-    margin: 0px 10px 0px 10px;
-    height: 60px;
-    line-height: 60px;
-
-
-}
-
-.right-side ul li:hover, .left-side ul li:hover {
-
-    border-bottom: 1px solid black;
-
-
-}
-
-
-/* -------------------HEADER END  */
-
-/* -------------------LEADER START */
 
 .container {
 
@@ -116,39 +62,151 @@ header a:link {
     margin:auto;
 }
 
+.tables a:link, .tables a:visited {
+
+    color: blue;
+
+
+}
+
+p {
+
+    color: rgb(121,121,121);
+}
+
+p, button, ul, h4, .top-table ul li {
+
+    margin-bottom: 20px;
+
+}
+
+h1 {
+
+    font-size: 60px;
+    padding-top: 60px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+.radio-button span {
+
+    margin-right: 50px;
+}
+
+/* ANIMATION SET */
+
+.arrow-nav {
+
+    position:relative;
+}
+
+#bottom {
+
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+#bottom:hover, #top:hover {
+    
+    animation: arrow 1s linear infinite;
+}
+
+@keyframes arrow {
+
+    0% {
+
+        transform: scaley(1);
+    }
+    
+    50% {
+
+        transform: scaley(0.8);
+    }
+
+    100% {
+
+        transform: scaley(1);
+    }
+}
+
+
+/* ANIMATION SET */
+
+/* -------------------HEADER START  */
+
+
+
+header {
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 80px;
+    background-color: white;
+}
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.nav ul {
+
+    display: flex;
+    list-style: none;
+    height: 100%;
+    line-height: 80px;
+    margin: 0;
+ 
+}
+
+.nav ul li a {
+
+    text-decoration: none;
+    padding: 0px 20px;
+
+}
+
+
+.logo img {
+
+    vertical-align: middle;
+    width: 60%;
+}
+
+/* -------------------HEADER END  */
+
+/* -------------------LEADER START */
+
 .leader {
 
     background-color: rgb(185,207,229);
     padding-top: 80px;
 }
 
-h1 {
 
-    font-size: 60px;
-    text-align:justify;
-    padding-top: 60px;
-    margin-bottom: 60px;
-    font-family: sans-serif;
-    font-weight: bold;
-}
 
 .leader-content {
 
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
-    height: fit-content;
-
 
 }
 
-.leader-img img {
-
-
-    max-width: 800px;
-;
-   
-}
 
 .leader-content i {
 
@@ -156,10 +214,7 @@ h1 {
     text-align: end;
 }
 
-.anchor-icon a:link {
 
-    color: black;
-}
 
 .leader-img {
 
@@ -173,22 +228,25 @@ h1 {
   
 }
 
+.in-leader-img img {
+
+    width: 100%;
+}
+
 
 .description-area {
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  
   font-size: 15px;
   font-family:sans-serif;
   width: 30%;
 
-  gap: 50px;
+  
 
+}
 
+.description-area p {
 
+    color: black;
 }
 
 /* -------------LEADER END */
@@ -204,10 +262,7 @@ main h1 {
     font-size: 50px;
 }
 
-.radio-button {
 
-    margin-right: 50px;
-}
 
 
 
@@ -260,10 +315,6 @@ main h1 {
 
 }
 
-.top-table * {
-
-    margin-bottom: 20px;
-}
 
 .top-table h3 {
 
@@ -319,24 +370,12 @@ main h1 {
     margin-top: 0px;
 }
 
-.button-table {
-
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
 .button-table button {
 
     width: 100%;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.button-table button a:link {
-
-    color: white;
-    text-decoration: none;
-}
 
 .table-container {
 
@@ -377,11 +416,7 @@ main h1 {
     padding: 15px 50px;
 }
 
-.main-btn-large a:link {
 
-    color: white;
-    text-decoration: none;
-}
 
 .table-container-large .top-table p:nth-of-type(2) {
 
@@ -422,11 +457,6 @@ main h1 {
 
 }
 
-.partner-box p {
-
-    color: rgb(121,121,121);
-}
-
 .side-img img {
 
     width: 100%;
@@ -452,11 +482,6 @@ main h1 {
     margin-bottom: 20px;
 }
 
-.info-partner p {
-
-    margin-bottom: 20px;
-}
-
 .info-partner button {
 
     border: 1px solid rgb(121,121,121);
@@ -472,17 +497,17 @@ main h1 {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
 
 }
 .business {
 
-  
-    width: calc(100% / 3);
+    width: calc(75% / 3);
 }
 
 .business p , .center-clients p {
 
-    color: rgb(121,121,121);
     margin-top: 20px;
     margin-bottom: 50px;
 }
@@ -499,6 +524,11 @@ main h1 {
 .discover {
 
     max-width: 50%;
+}
+
+.discover a:link, .discover a:visited {
+
+    color: blue;
 }
 /* DISCOVER */
 
@@ -546,6 +576,7 @@ main h1 {
 .client-box {
 
     width: 50%;
+    min-height: 16vw;
 
     display: flex;
     justify-content: center;
@@ -645,19 +676,6 @@ main h1 {
     padding: 100px 0px;
 }
 
-.bottom-button button {
-
-    background-color: white;
-    color: black;
-    padding: 10px 30px;
-}
-
-.bottom-join-in h2 {
-
-    width: 40%;
-}
-
-
 /* JOIN */
 
 .faq {
@@ -668,7 +686,7 @@ main h1 {
     padding: 35px 0px;
 }
 
-h2[target] {
+h2.faq-title {
 
     margin-bottom: 50px;
 }
@@ -677,6 +695,12 @@ h2[target] {
 
     margin-right: 40px;
 }
+
+.hidden-answer {
+
+    display: none;
+}
+
 
 /* JOIN */
 
@@ -693,6 +717,13 @@ footer {
     width: 60%;
     margin: auto;
     padding-bottom: 50px;
+    padding-top: 80px;
+}
+
+.footer-box a:link , .footer-box a:visited {
+
+    color: white;
+    text-decoration: none;
 }
 
 .in-footer-box {
@@ -717,12 +748,6 @@ footer {
     color: white;
 }
 
-.utility h4 {
-
-    margin-bottom: 20px;
-    margin-top: 80px;
-}
-
 .utility ul li {
 
     margin-bottom: 15px;
@@ -737,9 +762,5 @@ footer {
     line-height: 10px;
     height: 10px;
 }
-
-
-
-
 
 
